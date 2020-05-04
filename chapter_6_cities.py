@@ -23,16 +23,6 @@ cities = {
         },
     }
 
-#for city in cities:
-#    print(f"\nHere's some info about {city.title()}:")
-#    for info in city:
-#        if info == 'country':
-#            print(f"{city.title()} is located in {city[info]}")
-#        if info == 'population':
-#            print(f"The population of {city.title()} is {city[info]}")
-#        if info == 'fact':
-#            print(f"And an interesting fact about {city.title()} is {city[info]}")
-
 for city, info in cities.items():
     print(f"\nHere's some interesting info about {city.title()}:")
     print(f"{city.title()} is located in {info['country'].title()}.")
