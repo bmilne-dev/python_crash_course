@@ -205,13 +205,13 @@ ny_streets = [
 ny_streets.reverse()
 alphabetical_streets = sorted(ny_streets)
 ny_streets.sort(reverse=True)
-print(f"I have listed {len(ny_streets)} streets")
 in_brooklyn = 'myrtle'
 ny_streets.remove(in_brooklyn)
 ny_streets.append('park')
 ny_streets.insert(0, 'wall')
+print(f"I have listed {len(ny_streets)} streets")
 
-for street in ny_streets:
+for street in ny_streets[::-1]:
     x = ny_streets.pop()
     print(f"{x} is a street/avenue in manhattan.")
 
